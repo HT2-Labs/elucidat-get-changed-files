@@ -4,18 +4,18 @@
   "version": "1.0.0",
   "private": true,
   "contributors": [
-    "Elucidat Ltd. (https://github.com/elucidat)",
+    "Elucidat Ltd. (https://github.com/HT2-Labs)",
     "Ana María Martínez Gómez (https://github.com/Ana06)",
     "Jitterbit Inc. (https://github.com/jitterbit)"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elucidat/get-changed-files.git"
+    "url": "git+https://github.com/HT2-Labs/elucidat-get-changed-files.git"
   },
-  "homepage": "https://github.com/elucidat/get-changed-files#readme",
+  "homepage": "https://github.com/HT2-Labs/elucidat-get-changed-files#readme",
   "bugs": {
-    "url": "https://github.com/elucidat/get-changed-files/issues"
+    "url": "https://github.com/HT2-Labs/elucidat-get-changed-files/issues"
   },
   "keywords": [
     "GitHub",
