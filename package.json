@@ -40,7 +40,7 @@
     "lint": "eslint src/**/*.ts",
     "package": "ncc build",
     "test": "jest",
-    "all": "yarn clean && yarn build && yarn format && yarn package && yarn test"
+    "all": "yarn clean && yarn build && yarn format && yarn lint && yarn package && yarn test"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
@@ -53,6 +53,7 @@
     "@types/minimatch": "5.1.2",
     "@types/node": "^24.12.4",
     "@typescript-eslint/parser": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@vercel/ncc": "^0.34.0",
     "eslint": "^8.27.0",
     "eslint-plugin-github": "^4.4.1",
