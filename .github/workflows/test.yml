@@ -53,7 +53,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
+
+      - name: Setup Node 24                 
+        uses: actions/setup-node@v6           
+        with:                                 
+          node-version: 24      
+          cache: 'yarn'              
 
       - name: Install dependencies
         run: |
@@ -80,10 +86,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
+
+      - name: Setup Node 24                 
+        uses: actions/setup-node@v6           
+        with:                                 
+          node-version: 24      
+          cache: 'yarn' 
 
       - id: files
         name: Run the action without filtering
+        uses: ./
 
       - name: Print files
         run: |
@@ -96,6 +109,7 @@ jobs:
 
       - id: files-filtered
         name: Run the action with filtering
+        uses: ./
         with:
           filter: |
             *.yml
